@@ -1,0 +1,231 @@
+/*css reset*/
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*font-size: 100%;
+	font: inherit;*/
+  font-weight: normal;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*===RWD響應式網頁會設定的img css reset(Lesson7-41建議新增)===*/
+img {
+  /*圖片最大只會放大到原圖的100%*/
+  max-width: 100%;
+  /*自適應伸縮*/
+  height: auto; }
+
+/*css reset end*/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 14px; }
+
+body {
+  /*中文以Noto Sans為主、英文以Roboto為主(另外設定)、部分中文使用PingFangTC(另外設定)*/
+  font-family:Noto Sans,sans-serif;
+	/*Roboto:
+  font-family: 'Roboto', sans-serif;
+  /*IOS:
+	font-family: PingFangTC-Regular,PingFangTC-Ultralight,PingFangTC-Light,PingFangTC-Thin,PingFangTC-Medium,PingFangTC-Semibold, sans-serif;*/
+  background-color: #fff;
+  }
+
+/* ==== 共用 ====*/
+/*淺色底區塊*/
+/*大標*/
+section .title{
+  font-size: 32px;
+  line-height: 43px;
+}
+section .title span{
+  font-size: 24px;
+  font-weight: bold;
+  color:#A00404;
+  margin-left: 16px;
+  font-family: 'Roboto';
+}
+/*分隔線*/
+section hr{
+  margin-bottom: 16px;
+}
+/*內文*/
+section div p{
+  font-size: 24px;
+  line-height: 36px;
+}
+/*深色底區塊*/
+.bg-dark{
+  background-color: #415165;
+  padding-top: 24px;
+  padding-bottom: 36px;
+  color:#fff;
+}
+/*大標*/
+.bg-dark .dark-title{
+  font-size: 32px;
+  font-family:PingFangTC-Medium;
+  line-height: 45px;
+  text-align: center;
+}
+.bg-dark .dark-title span{
+  font-size: 24px;
+  font-weight: bold;  
+  margin-left: 16px;
+  font-family: 'Roboto';
+}
+/*分隔線*/
+.bg-dark hr{
+  margin-bottom: 40px;  
+}
+/* ==== 共用:深色底區域end ====*/
+
+/* ==== header ==== */
+header{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 47px;
+	padding-bottom: 48px;
+}
+header h1{
+  font-size: 80px;
+  line-height: 94px;
+  font-family: 'Roboto';
+  margin-bottom: 17px;
+}
+header hr{
+  margin-bottom: 48px;
+  border-width:2px;
+  color:#000;
+}
+/* ==== header end ==== */
+
+/* ==== section:個人資料 ==== */
+section.profile{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+section div.profile-name{
+  margin-bottom: 24px;
+}
+section div.profile-intro{
+  margin-bottom: 72px;
+}
+section div.profile-education>p{
+  margin-bottom: 24px;
+}
+/* ==== section:個人資料end ==== */
+
+/* ==== section:技能 ==== */
+.bg-dark div.skills-container{
+  max-width: 996px;
+  margin: 0 auto;
+}
+.bg-dark div.skills-container div{
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+  margin-left: 390px;
+}
+.bg-dark div.skills-container div p{
+  margin-bottom: 20px;
+  font-style: 24px;
+  line-height: 36px;
+  font-family: 'Roboto';
+}
+.bg-dark div.skills-container div p.language{
+  font-family:PingFangTC-Light;
+  margin-bottom: 0;
+}
+/* ==== section:技能end ==== */
+
+/* ==== section:工作經驗 ==== */
+section.work_experience{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+section.work_experience div.experience_div{
+  margin-bottom: 24px;
+}
+section.work_experience div.experience_div h4{
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+section.work_experience div.experience_div p{
+  font-size: 20px;
+  line-height: 30px;
+}
+section.work_experience h4{
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+/* ==== section:工作經驗end ==== */
+
+/* ==== footer ==== */
+footer{}
+footer .footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .footer-container p{
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+  font-family: 'Roboto';
+  font-weight: lighter;
+}
+footer .footer-container ul a{
+  margin-right: 24px;
+}
+/* ==== footer end ==== */
