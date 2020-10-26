@@ -93,6 +93,7 @@ section .title span{
 }
 /*分隔線*/
 section hr{
+  margin-top: 8px;
   margin-bottom: 16px;
 }
 /*內文*/
@@ -122,6 +123,7 @@ section div p{
 }
 /*分隔線*/
 .bg-dark hr{
+  margin-top: 8px;
   margin-bottom: 40px;  
 }
 /* ==== 共用:深色底區域end ====*/
@@ -218,6 +220,14 @@ footer .footer-container{
   margin: 0 auto;
   text-align: center;
 }
+footer .footer-container h4.dark-title{
+  line-height: 43px;
+  
+}
+footer .footer-container hr{
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
 footer .footer-container p{
   font-size: 24px;
   line-height: 36px;
@@ -225,7 +235,7 @@ footer .footer-container p{
   font-family: 'Roboto';
   font-weight: lighter;
 }
-footer .footer-container ul a{
+footer .footer-container ul a.mr-4{
   margin-right: 24px;
 }
 /* ==== footer end ==== */
